@@ -1,0 +1,33 @@
+{
+  "name": "bluthner-pianos",
+  "version": "1.0.0",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blongden73/Bluthner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blongden73/Bluthner/issues"
+  },
+  "homepage": "https://github.com/blongden73/Bluthner#readme",
+  "dependencies": {
+    "autoprefixer": "^9.0.2",
+    "cssnano": "^4.0.5",
+    "grunt": "^1.0.3",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^3.4.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-postcss": "^0.9.0",
+    "grunt-sass": "^2.0.1",
+    "pixrem": "^4.0.1"
+  },
+  "devDependencies": {
+    "grunt-ftp-deploy": "^0.2.0"
+  },
+  "description": ""
+}

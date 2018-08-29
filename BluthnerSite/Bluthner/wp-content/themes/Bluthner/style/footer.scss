@@ -1,0 +1,39 @@
+.bp-col {
+    @include upper;
+    font-size: font-size(2);
+    max-width: 90%;
+
+    @include mq($from: desktop) {
+        float: left;
+        width: bp-col(4);
+    }
+}
+
+.bp-address {
+    margin-left: bp-horizontal(1);
+    margin-top: bp-vertical(1);
+}
+
+.bp-opening-times {
+    margin-left: bp-horizontal(1);
+    margin-top: bp-vertical(1);
+
+    @include mq($from: desktop) {
+        margin-top: 60px;
+    }
+}
+
+.bp-footer {
+    background-color: $sawdust;
+    overflow: hidden;
+
+    .bp-wrapper {
+        overflow: hidden;
+        padding-top: bp-vertical(1);
+        padding-bottom: bp-vertical(1);
+    }
+
+    .bp-logo {
+        float: none;
+    }
+}

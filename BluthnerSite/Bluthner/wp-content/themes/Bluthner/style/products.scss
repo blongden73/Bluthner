@@ -1,0 +1,168 @@
+.bp-piano-filters {
+    position: absolute;
+    bottom: bp-vertical(1);
+    overflow: hidden;
+    width: 99%;
+
+    @include mq($from: desktop) {
+        margin-left: bp-horizontal(1);
+        display: flex;
+    }
+
+    .bp-piano-categories, .bp-piano-tag {
+        width: 100%;
+
+        @include mq($from: desktop) {
+            width: 50%;
+            float: left;
+        }
+    }
+
+    h1 {
+        margin-bottom: bp-vertical(1);
+        @include upper;
+        font-size: font-size(2);
+    }
+
+    ul {
+        overflow: hidden;
+
+        li {
+            @include upper;
+            float: left;
+            margin-right: bp-horizontal(1);
+            font-size: font-size(2);
+
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+}
+
+.bp-products-container {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0px;
+        left: 50%;
+        background-color: $sawdust;
+        content: '';
+        z-index: -1;
+    }
+}
+
+.bp-piano-category {
+    background-color: $sawdust;
+    overflow: hidden;
+    padding-left: bp-horizontal(1);
+    padding-bottom: bp-vertical(1);
+    padding-top: bp-vertical(1);
+
+    &:after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $sawdust;
+        content: '';
+        display: block;
+    }
+}
+
+.bp-piano-category-title {
+    float: left;
+    @include mq($from: desktop) {
+        width: bp-col(4);
+    }
+    @include mq($from: wide) {
+        width: bp-col(7);
+    }
+}
+
+.bp-piano-description {
+    float: left;
+
+    @include mq($from: desktop) {
+        width: 70%;
+    }
+    @include mq($from: wide) {
+        width: bp-col(6);
+    }
+
+    p {
+        @include mq($from: desktop) {
+            width: bp-col(4);
+        }
+    }
+}
+
+.bp-piano-inner {
+    padding-bottom: bp-vertical(1);
+
+    @include mq($from: desktop) {
+        margin-left: bp-col(1) / 2 + 8px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+#bp-piano-wrapper {
+    width: 100%;
+    position: relative;
+
+    @include mq($from: desktop) {
+        width: bp-col(3);
+        margin-right: bp-horizontal(2) - 6px;
+        padding-left: bp-horizontal(1);
+        padding-top: bp-horizontal(2);
+        padding-bottom: bp-horizontal(1);
+        position: relative;
+
+        &:after {
+            position: absolute;
+            content: '';
+            background-color: #ececec;
+            bottom: 0;
+            display: block;
+            left: -48px;
+            right: -25px;
+            height: 1px;
+        }
+    }
+
+    a {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        &:hover {
+            border: none;
+        }
+    }
+
+    .bp-piano-image {
+        width: 100%;
+        margin-bottom: bp-vertical(1);
+
+        img {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+    }
+
+    h1,h2 {
+        font-size: font-size(2.5);
+        font-family: $bp-sans;
+    }
+    h1 {
+        font-family: $bp-sans-bold;
+    }
+}

@@ -1,0 +1,258 @@
+.bp-page-image {
+    height: 300px;
+    width: 100%;
+    margin-top: -100px;
+
+    img {
+        object-position: top;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.bp-page-content, .bp-page-blocks {
+    width: 100%;
+
+    @include mq($from: desktop) {
+        width: 600px;
+        margin-left: bp-col(1);
+    }
+
+    h1 {
+        margin-bottom: bp-vertical(1);
+        margin-top: bp-vertical(1);
+    }
+
+    p {
+        margin-bottom: bp-vertical(1);
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-top: bp-vertical(1);
+        margin-bottom: bp-vertical(1);
+    }
+}
+
+.bp-single-head {
+    background-color: $sawdust;
+    padding-top: bp-vertical(1);
+    padding-bottom: bp-vertical(2);
+
+    @include mq($from: desktop) {
+        overflow: hidden;
+        margin-top: -150px;
+    }
+
+    .bp-wrapper {
+        overflow: hidden;
+    }
+}
+
+.bp-single-description {
+    h1 {
+        font-family: $bp-sans;
+        font-size: font-size(6.3);
+
+        @include mq($from: desktop) {
+            font-size: font-size(7.7);
+        }
+    }
+    h2 {
+        font-family: $bp-serif;
+        font-size: font-size(5.5);
+        margin-bottom: bp-vertical(2);
+
+        @include mq($from: desktop) {
+            font-size: font-size(7);
+        }
+    }
+    @include mq($from: desktop) {
+        float: left;
+        width: 420px;
+        margin-top: 170px;
+    }
+
+    @include mq($from: wide) {
+        margin-left: bp-col(2);
+    }
+}
+
+.bp-cta {
+    @include upper;
+    font-size: font-size(2);
+    border: 1px solid;
+    padding: 6px;
+    margin-top: 60px;
+    display: inline-block;
+}
+
+.bp-more-information {
+    padding-top: bp-vertical(1);
+    padding-bottom: bp-vertical(2);
+
+    @include mq($from: desktop) {
+        overflow: hidden;
+    }
+
+    .bp-wrapper {
+        @include mq($from: desktop) {
+            overflow: hidden;
+        }
+    }
+
+    .bp-colours {
+        @include mq($from: wide) {
+            margin-left: bp-col(2);
+        }
+    }
+
+    .bp-colour-all {
+        display: flex;
+        margin-top: bp-vertical(2);
+        flex-wrap: wrap;
+        justify-content:flex-start;
+
+        @include mq($from: desktop) {
+            justify-content: space-between;
+        }
+    }
+
+    .bp-colour {
+        border: 1px solid #000;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin-right: 2px;
+        margin-bottom: 2px;
+
+        @include mq($from: wide) {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
+.bp-single-image {
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    @include mq($from: desktop) {
+        float: right;
+        width: 500px;
+    }
+    @include mq($from: wide) {
+        width: 600px;
+    }
+}
+
+.bp-more-deatails, .bp-more-size {
+    @include mq($from: desktop) {
+        float: left;
+        width: 30%;
+    }
+}
+
+.bp-more-deatails {
+    @include mq($from: wide) {
+        margin-left: bp-col(2);
+    }
+    h3 {
+        @include upper;
+        font-size: font-size(2);
+        margin-bottom: bp-vertical(2);
+    }
+    p {
+        font-size: font-size(3);
+    }
+}
+
+.bp-more-size {
+    h3 {
+        @include upper;
+        font-size: font-size(2);
+        margin-bottom: bp-vertical(2);
+    }
+    p {
+        font-size: font-size(3);
+    }
+}
+
+.bp-single-lower-module {
+    background-color: $sawdust;
+    padding-top: bp-vertical(1);
+    padding-bottom: bp-vertical(2);
+
+    h1 {
+        margin-bottom: bp-vertical(2);
+    }
+
+    p {
+        margin-bottom: bp-vertical(1);
+    }
+
+    @include mq($from: desktop) {
+        overflow: hidden;
+    }
+
+    .bp-wrapper {
+        @include mq($from: desktop) {
+            overflow: hidden;
+        }
+    }
+}
+
+.bp-single-lower-module-image, .bp-single-bottom-module-image {
+    @include mq($from: desktop) {
+        float: right;
+        width: 500px;
+    }
+    @include mq($from: wide) {
+        width: 600px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+.bp-single-lower-module-description, .bp-single-bottom-module-description {
+    @include mq($from: desktop) {
+        float: left;
+        margin-top: 100px;
+        width: 420px;
+    }
+    @include mq($from: wide) {
+        margin-left: bp-col(2);
+    }
+}
+
+.bp-single-bottom-module {
+    padding-top: bp-vertical(1);
+    padding-bottom: bp-vertical(2);
+
+    h1 {
+        margin-bottom: bp-vertical(2);
+    }
+
+    p {
+        margin-bottom: bp-vertical(1);
+    }
+
+    @include mq($from: desktop) {
+        overflow: hidden;
+    }
+
+    .bp-wrapper {
+        @include mq($from: desktop) {
+            overflow: hidden;
+        }
+    }
+}

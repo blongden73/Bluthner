@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Junge');
+@import url("//hello.myfonts.net/count/3735fe");
+
+
+@font-face {font-family: 'GillSansMTPro-Book';src: url('style/webfonts/3735FE_0_0.eot');src: url('style/webfonts/3735FE_0_0.eot?#iefix') format('embedded-opentype'),url('style/webfonts/3735FE_0_0.woff2') format('woff2'),url('style/webfonts/3735FE_0_0.woff') format('woff'),url('style/webfonts/3735FE_0_0.ttf') format('truetype');}
+@font-face {font-family: 'GillSansMTPro-Bold';src: url('style/webfonts/3735FE_1_0.eot');src: url('style/webfonts/3735FE_1_0.eot?#iefix') format('embedded-opentype'),url('style/webfonts/3735FE_1_0.woff2') format('woff2'),url('style/webfonts/3735FE_1_0.woff') format('woff'),url('style/webfonts/3735FE_1_0.ttf') format('truetype');}
+
+$bp-sans: 'GillSansMTPro-Book', sans-serif;
+$bp-sans-bold: 'GillSansMTPro-Bold', sans-serif;
+$bp-serif: 'Junge', serif;
+
+@function font-size($multiplier){
+    @return 6px * $multiplier;
+}
